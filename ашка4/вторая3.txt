@@ -41,10 +41,10 @@ img1[2]=new Image;
 img1[3]=new Image;
 img1[4]=new Image;
 img1[5]=new Image;
-img1[0].src="карт5.jpg";
-img1[1].src="карт51.jpg";
-img1[2].src="карт52.jpg";
-img1[3].src="карт53.jpg";
+img1[0].src="карт52.jpg";
+img1[1].src="карт53.jpg";
+img1[2].src="карт5.jpg";
+img1[3].src="карт51.jpg";
 </Script>
 
 </BODY>
