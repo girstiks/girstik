@@ -1,0 +1,33 @@
+
+<html>
+<!DOCTYPE html>
+<head>
+
+
+<script language="JavaScript">
+function areaOfCircle(obj) {
+	var A=1*obj.st1.value;
+        var H=1*obj.st2.value;
+	var s=A*H;
+	obj.res.value=s;
+	}
+</script>
+
+
+<title> Задача 1 </title>
+</head>
+<body>
+<p> <A href="7.html"> В меню </A></p>
+<form name=form1>
+ Введите длину прямоугольника <input type="text" size="8" maxlength="8" name="st1">
+	<br><br>
+ Введите ширину прямоугольника <input type="text" size="8" maxlength="8" name="st2"> 
+        <br><br>       
+	<input type="button" value="Вычислить" onClick="areaOfCircle(form1);">
+	<input type="reset" value="Отменить">
+ Площадь прямоугольника <input type="text" size="8" maxlength="8" name="res">
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+<head>
+<title> —лайд-шоу </title>
+<script language="JavaScript">
+i=0;
+img_a=new Array();
+img_a[0]=new Image();
+img_a[1]=new Image();
+img_a[2]=new Image();
+img_a[3]=new Image();
+img_a[4]=new Image();
+img_a[5]=new Image();
+img_a[6]=new Image();
+img_a[7]=new Image();
+img_a[8]=new Image();
+img_a[9]=new Image();
+
+img_a[0].src="перва€.gif";
+img_a[1].src="втора€.gif";
+img_a[2].src="треть€.gif";
+img_a[3].src="четверта€.gif";
+img_a[4].src="п€та€.gif";
+img_a[5].src="шеста€.gif";
+img_a[6].src="седьма€.gif";
+img_a[7].src="восьма€.gif";
+img_a[8].src="дев€та€.gif";
+img_a[9].src="дес€та€.gif";
+
+function img_b()
+{document.images[0].src=img_a[i].src;
+i++;
+if(i>9) {i=0;}
+setTimeout ("img_b()",5000);
+}
+
+</script>
+</head>
+
+<body bgcolor="#ffffff" onLoad=img_b()>
+<img src="перва€.gif">
+
+</body>
+</html>

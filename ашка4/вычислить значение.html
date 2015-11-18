@@ -1,0 +1,29 @@
+
+<html>
+<!DOCTYPE html>
+<head>
+
+
+<script language="JavaScript">
+function Zadanie3(obj) {
+	var x=obj.x.value;
+	if (x<-5) obj.res.value=1.5-x;
+	if (-5<=x<=10) obj.res.value=1.5*x-1;
+	if (x>10) obj.res.value=2.1-X^2;
+	}
+</script>
+
+<title> Вычисление значения функции Y(X) </title>
+</head>
+<body bgcolor="#AFEEEE">
+<form name=form1>
+	Введите значение X <input type="text" size="8" maxlength="8" name="x">
+	<br><br>
+	<input type="button" value="Вычислить" onClick="Zadanie3(form1);">
+	<input type="reset" value="Отменить">
+	Результат Y <input type="text" size="8" maxlength="8" name="res">
+</form>
+
+
+</body>
+</html>

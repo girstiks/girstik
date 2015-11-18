@@ -1,0 +1,32 @@
+
+
+<html>
+<!DOCTYPE html>
+<head>
+
+
+<script language="JavaScript">
+function from(obj) {
+	var x=obj.x.value;
+	if (x<-50) obj.res.value=15+pow(x,3);
+	if (x<=20) obj.res.value=15*x-1;
+        if (x>=-50) obj.res.value=15*x-1;
+	if (x>20) obj.res.value=25-pow(x,2);
+	}
+</script>
+
+<title> Вычисление значения функции Y(X) </title>
+</head>
+<body>
+<p>  <A href="7.html"> В меню </A>  </p>
+<form name=form1>
+	Введите значение X <input type="text" size="8" maxlength="8" name="x">
+	<br><br>
+	<input type="button" value="Вычислить" onClick="from(form1);">
+	<input type="reset" value="Отменить">
+	Результат Y <input type="text" size="8" maxlength="8" name="res">
+</form>
+
+
+</body>
+</html>

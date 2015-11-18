@@ -1,0 +1,67 @@
+
+
+<html>
+<!DOCTYPE html>
+<head>
+
+<style type = "text/css">
+.item {background-color:#AFEEEE;}
+.selected {background-color:#1C1C1C;}
+.menu {border-style: ridge; 
+    position:fixed;    /* Фиксированное позиционирование */
+    top:15;    /* Сверху 15, 15 от верху экрана */
+    left:50px; right:50px;    /* Слева и справа по 50px отступов */
+    text-align:center; /* Расположение текста по центру */}
+.menu2 {
+	border-style: ridge; 
+    position:fixed;    /* Фиксированное позиционирование */
+    /*top:15;*/
+    bottom:0;    
+    left:100px; right:100px;    /* Слева и справа по 100px отступов */
+    text-align:center; /* Расположение текста по центру */}
+</style>
+
+
+
+<title>МЕНЮ</title>
+</head>
+<body background="карт52.jpg">
+
+
+<p><table id=tt class="menu" height=100 width=350>
+<tr id="item1" class="item" onClick="item1_click()" onMouseOver="item1.className='selected'; showDesc(form1, 'Вычисление площади треугольной пирамиды по формуле V=1/3*S*H')" onMouseOut="item1.className='item'; delet(form1)">
+<td><a href="в площадь треугольника.html">Задача 1<a></td>
+</tr>
+
+<tr id="item2" class="item" onClick="item2_click()" onMouseOver="item2.className='selected'; showDesc(form1, 'Вычисление Y по формуле.')" onMouseOut="item2.className='item'; delet(form1)">
+<td><a href="вычислить Y.html">Задача 2<a></td>
+</tr>
+<tr id="item3" class="item" onClick="item3_click()" onMouseOver="item3.className='selected'; showDesc(form1, 'Вычисление Y(X); ')" onMouseOut="item4.className='item'; delet(form1)">
+<td><a href="вычислить значение.html">Задача 3<a></td>
+</tr>
+<tr id="item3" class="item" onClick="item3_click()" onMouseOver="item3.className='selected'; showDesc(form1, 'Вычисление Y(X); ')" onMouseOut="item4.className='item'; delet(form1)">
+<td><a href="внаибольшее.html">Задача 4<a></td>
+</tr>
+
+</table>
+
+<table id=tt class="menu2" height=100 width=350>
+<tr>
+<td id="ite4m" class="item" onClick="item4_click()" onMouseOver="item4.className='selected'; showDesc(form1, 'Вычисление объема треугольной пирамиды по формуле V=1/3*S*H')" onMouseOut="item3.className='item'; delet(form1)"><a href="в площадь треугольника.html">Задача 1<a></td>
+<td id="item5" class="item" onClick="item5_click()" onMouseOver="item5.className='selected'; showDesc(form1, 'Вычислить значение Y по формуле:')" onMouseOut="item5.className='item'; delet(form1)"><a href="вычислить Y.html">Задача 2<a></td>
+<td id="item6" class="item" onClick="item6_click()" onMouseOver="item6.className='selected'; showDesc(form1, 'Вычисление Y(X); ')" onMouseOut="item6.className='item'; delet(form1)"><a href="вычислить значение.html">Задача 3<a></td>
+<td id="item5" class="item" onClick="item5_click()" onMouseOver="item5.className='selected'; showDesc(form1, 'Вычислить значение Y по формуле:')" onMouseOut="item5.className='item'; delet(form1)"><a href="внаибольшее.html">Задача 4<a></td>
+
+
+</tr>
+
+
+</table>
+<br></br> <br></br> <br></br> 
+
+<P aling=center ><H1> <i> Задача1 </i> Вычислить площадь треугольника по формуле S=0,5AH .</H1></P> 
+<P aling=center ><H1> <i> Задача2</i> Вычислить значение функции Y  по формуле Y=cos(F)+(J^2)+0.6*T.</H1></P> 
+<P aling=center ><H1> <i> Задача3</i> Вычислить значение Y(X).</H1></P> 
+<P aling=center ><H1> <i> Задача4</i> Найти наибольшее из трех заданых чисел.
+</body>
+</html>

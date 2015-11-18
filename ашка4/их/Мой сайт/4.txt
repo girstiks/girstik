@@ -1,0 +1,37 @@
+
+<html>
+<head>
+<Script language="JavaScript">
+<!--
+ Images = new Array (new Image, new Image, new Image, new Image);
+ Images[0].src="первая.gif";  Images[0].name="первая";
+ Images[1].src="перваяON.gif";
+ Images[2].src="вторая.gif";      Images[2].name="вторая";
+ Images[3].src="втораяON.gif";  
+
+function imageON(Name) {
+ for (i=0; i<Images.length; i+=2) {
+  if (Images[i].name == Name) {document.images [Name].src=Images[i+1].src;}
+ }
+}
+
+function imageOFF(Name) {
+ for (i=0; i<Images.length; i+=2) {
+  if (Images[i].name == Name) {document.images [Name].src=Images[i].src;}
+ }
+}
+
+-->
+</Script>
+</head>
+<body bgcolor=ffffff>
+ <p aling="center">
+ <img name="первая" onMouseMove="imageON(this.name)" onMouseOut="imageOFF(this.name)" src="первая.gif">
+ </p>
+
+<p aling="center">
+ <img name="вторая" onMouseMove="imageON(this.name)" onMouseOut="imageOFF(this.name)" src="вторая.gif">
+</p>
+
+</body>
+</html>

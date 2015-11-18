@@ -1,0 +1,44 @@
+<html>
+<!DOCTYPE html>
+<head>
+
+
+<script language="JavaScript">
+function from(obj) {
+	var a=obj.a.value;
+	var b=obj.b.value;
+	var x=obj.x.value;
+	var y=obj.y.value;
+	var z=obj.z.value;
+	
+	obj.res.value="";
+	if ((a<x) && (x<b)) obj.res.value=obj.res.value + x + " ";
+	if ((a<y) && (y<b)) obj.res.value=obj.res.value + y + " ";
+	if ((a<z) && (z<b)) obj.res.value=obj.res.value + z + " ";
+	}
+</script>
+
+<title> Найти числа, которые принадлежат заданному промежутку </title>
+</head>
+<body>
+<p> <A href="7.html"> В меню </A></p>
+<form name=form1>
+	Первое значение интервала <input type="text" size="8" maxlength="8" name="a">
+        <br><br>
+	Второе значение интервала <input type="text" size="8" maxlength="8" name="b">
+	<br><br>
+        X <input type="text" size="8" maxlength="8" name="x">
+        <br><br>
+	Y <input type="text" size="8" maxlength="8" name="y">
+        <br><br>
+	Z <input type="text" size="8" maxlength="8" name="z">
+        <br><br>
+
+	<input type="button" value="Вычислить" onClick="from(form1);">
+	<input type="reset" value="Отменить">
+	Входят: <input type="text" size="8" maxlength="8" name="res">
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<TITLE>Заголовок документа</TITLE>
+</HEAD>
+<BODY >
+
+<div id="container"><div id="header"></div>
+<div id="nav">
+<ul>
+<li>главная</li>
+<li><a href="вторая1.html">главная</a>
+<li><a href="вторая2.html">главная</a>
+<li><a href="вторая3.html">главная</a>
+</ul>
+
+</div>
+<div id ="text">
+<img class="img1" src="карт4.jpg" alt="упс">
+<p> здесь мой великолепный текст расположиться с комфортом </p>
+<br>
+<a href="вторая2">возврат</a>
+</div>
+
+
+
+
+
+</div>
+</BODY>
+</HTML>

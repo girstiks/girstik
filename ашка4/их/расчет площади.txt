@@ -1,0 +1,30 @@
+<html>
+<!DOCTYPE html>
+<head>
+
+<script language="JavaScript">
+function VolumePyramids(obj) {
+	var S=1*obj.st1.value;
+     var H=1*obj.st2.value;
+	var v=1/3*S*H;
+	obj.res.value=v;	}
+     </script>
+
+
+<title> Задача 1 </title>
+</head>
+<body>
+<form name=form1>
+	Площадь основания <input type="text" size="8" maxlength="8" name="st1">
+	<br><br>
+           Высота <input type="text" size="8" maxlength="8" name="st2">
+	<br><br>
+
+	<input type="button" value="Вычислить" onClick="VolumePyramids(form1);">
+	<input type="reset" value="Отменить">
+	Результат <input type="text" size="8" maxlength="8" name="res">
+</form>
+
+
+</body>
+</html>

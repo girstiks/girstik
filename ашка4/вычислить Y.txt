@@ -1,0 +1,35 @@
+<html>
+<!DOCTYPE html>
+<head>
+
+<script language="JavaScript">
+function ZnachenieY(obj) {
+	var F=1*obj.F.value;
+	var J=1*obj.J.value;
+	var T=1*obj.T.value;
+     var Y=cos(F)+(J^2)+0.6*T;
+	obj.res.value=Y
+	}
+</script>
+
+
+<title> Задача 2 </title>
+</head>
+<body bgcolor="#AFEEEE">
+<form name=form1>
+	Значение F<input type="text" size="8" maxlength="8" name="F">
+	<br><br>
+      Значение J<input type="text" size="8" maxlength="8" name="J">
+
+      Значение T<input type="text" size="8" maxlength="8" name="T">
+
+	<br><br>
+
+	<input type="button" value="Вычислить" onClick="ZnachenieY(form1);">
+	<input type="reset" value="Отменить">
+	Результат <input type="text" size="8" maxlength="8" name="res">
+</form>
+
+
+</body>
+</html>

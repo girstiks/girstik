@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<script language ="JavaScript">
+<!--
+Images = new Array(new Image,new Image,new Image,new Image,new Image,new Image,new Image,new Image);
+Images[0].src="капенгаген.jpg"; 	Images[0].name="капенгаген";
+Images[1].src="капенгагенON.jpg"; 
+Images[2].src="экибастуз.jpg"; 	Images[2].name="экибастуз";
+Images[3].src="экибастузON.jpg"; 
+function imageON(Name)
+{for(i=0;i<Images.length;i+=2)
+{if(Images[i].name == Name){document.images[Name].src=Images[i+1].src;}}
+}
+function imageOFF(Name)
+{for(i=0;i<Images.length;i+=2)
+{if(Images[i].name == Name){document.images[Name].src=Images[i].src;}}
+}
+//-->
+</script>
+
+<TITLE>Заголовок документа</TITLE>
+</HEAD>
+<BODY background="карт4.jpg">
+
+<img name="капенгаген" onmousemove="imageON(this.name)"
+onmouseout="imageOFF(this.name)" src="капенгаген.jpg"
+ style = "position:absolute; left:140; top:140" width=250 hight=350>
+<img src=капенгаген.jpg style = "position:absolute; left:200; top:90" width=350 hight=450>
+<img src=капенгаген.jpg style = "position:absolute; left:280; top:50" width=450 hight=550>
+<img name="экибастуз" onmousemove="imageON(this.name)"
+onmouseout="imageOFF(this.name)" src="экибастуз.jpg"
+ style = "position:absolute; left:350; top:10" width=550 hight=650>
+</BODY>
+</HTML>
+ 

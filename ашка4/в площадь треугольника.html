@@ -1,0 +1,31 @@
+<html>
+<!DOCTYPE html>
+<head>
+
+<script language="JavaScript">
+function areaTreygolnik(obj) {
+	var A=1*obj.st1.value;
+        var H=1*obj.st2.value;
+	var S=0.5*A*H;
+	obj.res.value=S;
+	}
+</script>
+
+
+<title> Задача 1 </title>
+</head>
+<body bgcolor="#AFEEEE">
+<form name=form1>
+	 Введите длинну стороны треугольника <input type="text" size="8" maxlength="8" name="st1">
+	<br><br>
+         Введите высоту треугольника<input type="text" size="8" maxlength="8" name="st2">
+	<br><br>
+
+	<input type="button" name="button" value="Вычислить" onClick="areaTreygolnik(form1);">
+	<input type="reset" value="Отменить">
+	Результат <input type="text" size="8" maxlength="8" name="res">
+</form>
+
+
+</body>
+</html>

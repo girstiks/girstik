@@ -1,0 +1,80 @@
+<html>
+<!DOCTYPE html>
+<head>
+
+<style type = "text/css">
+.item {background-color: #FF69B4;}
+.selected {background-color:#FF0000;}
+.menu {border-style: ridge; 
+ position:fixed; 
+ top:0; 
+ left:50px; right:50px;
+ text-align:center; }
+.menu2 {
+ border-style: ridge; 
+ position:fixed;
+ bottom:0; 
+ left:100px; right:100px; 
+ text-align:center; }
+.menu3 {
+ border-style: ridge; 
+ position:fixed; 
+ text-align:center; }
+
+</style>
+<script language="JavaScript">
+function showDesc(obj,n){
+ obj.desc.value=n;
+ }
+ 
+function delet(obj){
+ obj.desc.value=' ';
+} 
+</script>
+
+<title>МЕНЮ</title>
+</head>
+<body background="lightcoral">
+
+<p><table id=tt class="menu" height=150 width=150>
+
+<tr id="item1" class="item" onClick="item1_click()" onMouseOver="item1.className='selected'; showDesc(form1, 'Вычисление площади прямоугольника по формуле S=AH')" onMouseOut="item1.className='item'; delet(form1)">
+<td><a href="дз1.html">Задача 1<a></td>
+</tr>
+
+<tr id="item2" class="item" onClick="item2_click()" onMouseOver="item2.className='selected'; showDesc(form1, 'Вычисление Y по формуле:Y=cos(F)+J^4-0.12*T.')" onMouseOut="item2.className='item'; delet(form1)">
+<td><a href="дз2.html">Задача 2<a></td>
+</tr>
+
+<tr id="item3" class="item" onClick="item3_click()" onMouseOver="item3.className='selected'; showDesc(form1, 'Вычисление Y(X); ')" onMouseOut="item3.className='item'; delet(form1)">
+<td><a href="дз3.html">Задача 3<a></td>
+</tr>
+
+<tr id="item4" class="item" onClick="item1_click()" onMouseOver="item4.className='selected'; showDesc(form1, 'Дан интервал и три действительных числа. Выбрать из них те, которые принадлежат заданному интервалу ')" onMouseOut="item4.className='item'; delet(form1)">
+<td><a href="дз4.html">Задача 4<a></td>
+</tr>
+</table>
+
+<table id=tt class="menu2" height=50 width=300>
+<tr>
+<td id="item5" class="item" onClick="item5_click()" onMouseOver="item5.className='selected'; showDesc(form1, 'Вычисление площади прямоугольника по формуле S=AH')" onMouseOut="item5.className='item'; delet(form1)">
+<a href="дз1.html">Задача 1<a></td>
+
+<td id="item6" class="item" onClick="item6_click()" onMouseOver="item6.className='selected'; showDesc(form1, 'Вычисление Y по формуле:Y=cos(F)+J^4-0.12*T.')" onMouseOut="item6.className='item'; delet(form1)">
+<a href="дз2.html">Задача 2<a></td>
+
+<td id="item7" class="item" onClick="item7_click()" onMouseOver="item7.className='selected'; showDesc(form1, 'Вычисление Y(X); ')" onMouseOut="item7.className='item'; delet(form1)">
+<a href="дз3.html">Задача 3<a></td>
+
+<td id="item8" class="item" onClick="item8_click()" onMouseOver="item8.className='selected'; showDesc(form1, 'Дан интервал и три действительных числа. Выбрать из них те, которые принадлежат заданному интервалу')" onMouseOut="item8.className='item'; delet(form1)">
+ <a href="дз4.html">Задача 4<a></td>
+</tr>
+</table>
+
+<form name="form1" align="center">
+<textarea class=menu3 name="desc" clos=45 rows=4> </textarea>
+</form>
+
+
+</body>
+</html>

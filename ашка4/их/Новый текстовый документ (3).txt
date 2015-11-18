@@ -1,0 +1,34 @@
+<html>
+<head>
+<Script language="JavaScript">
+<!-- 
+Images = new Array (new Image, new Image, new Image, new Image);
+Images[0].src="4_2.gif"; Images[0].name="4_2";
+Images[1].src="4_2ON.gif";
+Images[2].src="Earth1.gif"; Images[2].name="Earth1";
+Images[3].src="Earth1ON.gif"; 
+
+function imageON(Name) {
+for (i=0; i<Images.length; i+=2) {
+if (Images[i].name == Name) {document.images[Name].src=Images[i+1].src;}
+}
+}
+
+function imageOFF(Name) {
+for (i=0; i<Images.length; i+=2) {
+if (Images[i].name == Name) {document.images[Name].src=Images[i].src;}
+}
+}
+//-->
+</Script>
+</head>
+<body bgcolor=ffffff>
+<p aling="center">
+<img name="4_2" onMouseMove="imageON (this.name) " onMouseOut="imageOFF(this.name)" src="4_2.gif" >
+</p>
+
+<p aling="center">
+<img name="Earth1" onMouseMove="imageON(this.name)" onMouseOut="imageOFF(this.name)" src="Earth1.gif" >
+</p>
+</body>
+</html>

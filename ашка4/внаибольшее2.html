@@ -1,0 +1,50 @@
+
+
+<script language="JavaScript"> 
+<!-- Маскируемся! 
+inpl = prompt("Введите число","Число"); 
+inp2 = prompt("Введите число","Число"); 
+inp3 = prompt("Введите число","Число"); 
+alert("Наибольшее из введенных чисел "+ Math.max(inpl, inp2, inp3)); 
+alert("Наименьшее из введенных чисел "+ Math.min(inpl, inp2 , inp3)); 
+// Снимаем маскировку. --> 
+</script>
+
+<html>
+<!DOCTYPE html>
+<head>
+
+<script language="JavaScript">
+function ZnachenieY(obj) {
+	var A=1*obj.A.value;
+	var B=1*obj.B.value;
+	var C=1*obj.C.value;
+     
+	obj.res.value=""
+      if ((A>B) && (A>C)) obj.res.value=obj.res.value + A + " ";
+	if ((B>A) && (B>C)) obj.res.value=obj.res.value + B + " ";
+	if ((C>A) && (C>B)) obj.res.value=obj.res.value + C + " ";
+	}
+</script>
+
+
+<title> Задача 2 </title>
+</head>
+<body bgcolor="#AFEEEE">
+<form name=form1>
+	Значение A<input type="text" size="8" maxlength="8" name="A">
+	<br><br>
+      Значение B<input type="text" size="8" maxlength="8" name="B">
+
+      Значение C<input type="text" size="8" maxlength="8" name="C">
+
+	<br><br>
+
+	<input type="button" value="Вычислить" onClick="ZnachenieY(form1);">
+	<input type="reset" value="Отменить">
+	Результат <input type="text" size="8" maxlength="8" name="res">
+</form>
+
+
+</body>
+</html>

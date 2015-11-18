@@ -1,0 +1,27 @@
+<html>
+<head>
+<title> Банер </title>
+<script language="JavaScript">
+URL = new Array
+  URL[0]="http://www.rbc.ru/"
+  URL[1]="http://www.bfm.ru/"
+  URL[2]="http://ru.reuters.com/news/business"
+
+
+image_ID = new Array
+  image_ID[0]="photoshoptouch.JPEG"
+  image_ID[1]="pixlrexpress.JPEG"
+  image_ID[2]="pixlrexpress2.JPEG"
+ 
+ var banner=2
+
+function Rotate() {
+document.images[0].src=image_ID[banner]
+ if (banner>2) banner=0;
+ banner++
+ 
+ setTimeout("Rotate()",2000);
+}
+</script>
+</head>
+</html>

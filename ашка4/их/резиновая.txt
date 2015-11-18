@@ -1,0 +1,85 @@
+
+
+
+<html>
+     <head> 
+<script language="JavaScript">
+i=0;
+img_a=new Array();
+img_a[0]=new Image();
+img_a[1]=new Image();
+img_a[2]=new Image();
+img_a[3]=new Image();
+img_a[4]=new Image();
+img_a[5]=new Image();
+img_a[6]=new Image();
+img_a[7]=new Image();
+img_a[8]=new Image();
+img_a[9]=new Image(); 
+
+
+img_a[0].src="первая.gif";
+img_a[1].src="вторая.gif";
+img_a[2].src="третья.gif";
+img_a[3].src="четвертая.gif";
+img_a[4].src="пятая.gif";
+img_a[5].src="шестая.gif";
+img_a[6].src="седьмая.gif";
+img_a[7].src="восьмая.gif";
+img_a[8].src="девятая.gif";
+img_a[9].src="десятая.gif";
+
+
+
+function img_b()
+{document.images[1].src=img_a[i].src;
+i++;
+if(i>9) {i=0;}
+setTimeout ("img_b()",2000);
+}
+
+
+
+</script>
+</head>
+
+           <title> Eset NOD</title>
+<style type="text/css">
+table.main {width:100%; height:100%}
+td.text {}
+html, body { margin:0px; padding:0px;}
+table.main { border-collapse: collapse;}
+td { padding:0px;}
+</style>
+     </head> 
+
+          <body link=darkblue alink=darkturquoise vlink=navy bgcolor=salmon bgcolor="#ffffff" onLoad=img_b()>
+<img src="первая.gif" width=300 height=300> >
+<table border="3" wight=1300 hight=600 class="main" >
+ <tr> 
+<td align=center > <H2>Eset NOD</H2></td>
+</tr>
+<tr>
+<td class="center_col"><i> ESET NOD</i>— антивирусный пакет, выпускаемый словацкой фирмой ESET. Первая версия была выпущена в конце 1987 года.[3] Название изначально расшифровывалось как «Nemocnice na Okraji Disku» («Больница на краю диска», перефраз названия популярного тогда в Чехословакии телесериала «Больница на окраине города»).
+ESET NOD32 — это комплексное антивирусное решение для защиты в реальном времени. ESET NOD32 обеспечивает защиту от вирусов, а также от других угроз, включая троянские программы[4], черви, spyware, adware, фишинг-атаки. В ESET NOD32 используется патентованная технология ThreatSense, предназначенная для выявления новых возникающих угроз в реальном времени путём анализа выполняемых программ на наличие вредоносного кода, что позволяет предупреждать действия авторов вредоносных программ.
+При обновлении баз используется ряд серверов-зеркал, при этом также возможно создание внутрисетевого зеркала обновлений, что приводит к снижению нагрузки на интернет-канал. Для получения обновлений с официальных серверов необходимы имя пользователя и пароль, которые можно получить, активировав свой номер продукта на странице регистрации регионального сайта.
+Наравне с базами вирусов NOD32 использует эвристические методы, что может приводить к лучшему обнаружению ещё неизвестных вирусов.
+Большая часть кода антивируса написана на языке ассемблера[5], поэтому для него характерно малое использование системных ресурсов[6][7] и высокая скорость проверки с настройками по умолчанию
+</td>
+ </tr>
+<tr align=left>
+<td>
+                 <IMG src=программы3.png width=300 hight=300 >
+
+</td>
+</tr>
+<tr>
+<td align=center><br> <A href="страница1.html">  Главная страница </A> </br>
+<br> <A href="index.html">  Назад </A> </br>
+</td>
+</tr>
+
+</table>
+                               
+       </body>
+</html>

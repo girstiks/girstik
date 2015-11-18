@@ -1,0 +1,36 @@
+<html>
+<!DOCTYPE html>
+<head>
+
+<script language="JavaScript">
+function ZnachenieY(obj) {
+	var K=1*obj.K.value;
+	var L=1*obj.L.value;
+	var P=1*obj.P.value;
+     var Y=Math.sin(K)*Math.cos(L)-P/3;
+	obj.res.value=Y
+	}
+</script>
+
+
+<title> Задача 2 </title>
+</head>
+<body>
+<form name=form1>
+	Значение K<input type="text" size="8" maxlength="8" name="K">
+	<br><br>
+      Значение L<input type="text" size="8" maxlength="8" name="L">
+
+      Значение P<input type="text" size="8" maxlength="8" name="P">
+
+	<br><br>
+
+	<input type="button" value="Вычислить" onClick="ZnachenieY(form1);">
+	<input type="reset" value="Отменить">
+	Результат <input type="text" size="8" maxlength="8" name="res">
+</form>
+
+
+</body>
+</html>
+

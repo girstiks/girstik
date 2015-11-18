@@ -1,0 +1,39 @@
+
+<html>
+<!DOCTYPE html>
+<head>
+
+<script language="JavaScript">
+function ZnashenieY(obj) {
+	var F=1*obj.F.value;
+        var J=1*obj.J.value;
+        var T=1*obj.T.value;
+	var Y=Math.cos(F)+Math.pow(J,4)-0.12*T;
+	obj.res.value=Y;
+	}
+</script>
+
+<title> Вычисление значение Y </title>
+
+</head>
+
+<body>
+<p> <A href="7.html"> В меню </A> </p>
+
+<form name=form1>
+	Введите значение для F <input type="text" name="F" size="10" maxlength="10" >
+	<br><br>
+        Введите значение для J <input type="text" name="J" size="10" maxlength="10" >
+        <br><br>
+        Введите значение для T <input type="text" name="T" size="10" maxlength="10" >
+        <br><br>
+
+	<input type="button" name="button" value="Вычислить" onClick="ZnashenieY(form1);">
+	<input type="reset" name="reset" value="Отменить">
+
+	Значение Y <input type="text" name="res" size="10" maxlength="10" >
+</form>
+
+
+</body>
+</html>
